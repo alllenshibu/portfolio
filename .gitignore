@@ -1,3 +1,30 @@
-node_modules/
-.cache/
-public
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# gatsby
+.cache
+
+# testing
+/coverage
+
+# production
+/build
+/public
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# local env files
+.env*
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts

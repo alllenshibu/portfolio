@@ -10,19 +10,19 @@ const Footer = () => {
         <div className="flex flex-col justify-center items-start">
           <p className="font-semibold text-black">Account Links</p>
           <button className="hover:bg-clip-text hover:text-transparent hover:bg-[#333333]">
-            GitHub
+            <a href={process.env.SOCIAL_GITHUB_URL}>GitHub</a>
           </button>
           <button className="hover:bg-clip-text hover:text-transparent hover:bg-[#0077B5]">
-            LinkedIn
+            <a href={process.env.SOCIAL_LINKEDIN_URL}>LinkedIn</a>
           </button>
           <button className="hover:bg-clip-text hover:text-transparent hover:bg-[#127CD6]">
-            Email
+            <a href={process.env.SOCIAL_EMAIL_URL}>Email</a>
           </button>
           <button className="hover:bg-clip-text hover:text-transparent hover:bg-gradient-to-r hover:from-[#405DE6] hover:via-[#E130C6] hover:to-[#FCAF45]">
-            Instagram
+            <a href={process.env.SOCIAL_INSTAGRAM_URL}>Instagram</a>
           </button>
           <button className="hover:bg-clip-text hover:text-transparent hover:bg-[#1DA1F2]">
-            Twitter
+            <a href={process.env.SOCIAL_TWITTER_URL}>Twitter</a>
           </button>
         </div>
         <div className="flex flex-col justify-center items-start">
