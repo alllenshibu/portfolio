@@ -8,12 +8,24 @@ const Skills = () => {
       </div>
       <div className="p-8 h-full w-full flex flex-col justify-center items-center gap-10 ">
         <p className="text-center md:w-3/5">
-          I am excellent and experienced in building full-stack web apps with
-          React, NextJS, TailwindCSS, Express, MongoDB, Supabase and Postgres. I
-          have an excellent knowledge of Git and GitHub. I have a basic
-          knowledge of Containerisation and Docker and I am familiar with
-          technologies such as DigitalOcean, Render and Heroku. I am skilled in
-          Java and I have a basic knowledge of SpringBoot.
+          I am excellent and experienced in building{" "}
+          <span className="skill-span">full-stack</span> web apps with{" "}
+          <span className="skill-span">React</span>,{" "}
+          <span className="skill-span">NextJS</span>,{" "}
+          <span className="skill-span">TailwindCSS</span>,{" "}
+          <span className="skill-span">Express</span>,{" "}
+          <span className="skill-span">MongoDB</span>,{" "}
+          <span className="skill-span">Supabase</span> and{" "}
+          <span className="skill-span">Postgres</span>. I have an excellent
+          knowledge of <span className="skill-span">Git</span> and{" "}
+          <span className="skill-span">GitHub</span>. I have a basic knowledge
+          of <span className="skill-span">Containerisation</span> and{" "}
+          <span className="skill-span">Docker</span> and I am familiar with
+          technologies such as <span className="skill-span">DigitalOcean</span>,
+          <span className="skill-span">Render</span> and{" "}
+          <span className="skill-span">Heroku</span>. I am skilled in{" "}
+          <span className="skill-span">Java</span> and I have a basic knowledge
+          of <span className="skill-span">SpringBoot</span>.
         </p>
         <div className="w-full px-10 md:px-20 py-8 bg-gray-200 rounded-md flex flex-row justify-center  flex-wrap gap-2">
           <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
