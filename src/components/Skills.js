@@ -11,7 +11,7 @@ const Skills = () => {
           I am excellent and experienced in building{" "}
           <span className="skill-span">full-stack</span> web apps with{" "}
           <span className="skill-span">React</span>,{" "}
-          <span className="skill-span">NextJS</span>,{" "}
+          <span className="skill-span">Next.js</span>,{" "}
           <span className="skill-span">TailwindCSS</span>,{" "}
           <span className="skill-span">Express</span>,{" "}
           <span className="skill-span">MongoDB</span>,{" "}
