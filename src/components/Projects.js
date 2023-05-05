@@ -7,7 +7,7 @@ const Projects = () => {
 
   useEffect(async () => {
     try {
-      const projects = await axios.get(`${process.env.API_URL}/api/projects`)
+      const projects = await axios.get(`${process.env.GATSBY_API_URL}/api/projects`)
       setProjects(JSON.parse(projects.data))
     } catch (err) {
       setProjects([])
