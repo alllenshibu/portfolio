@@ -13,7 +13,7 @@ const Contact = () => {
         </p>
         <form className="w-full py-10 px-10 md:px-0 md:w-1/2 flex flex-col gap-4">
           <div>
-            <label for="name">Name</label>
+            <label htmlFor="name">Name</label>
             <input
               id="name"
               name="name"
@@ -22,7 +22,7 @@ const Contact = () => {
             />
           </div>
           <div>
-            <label for="email">Email</label>
+            <label htmlFor="email">Email</label>
             <input
               id="email"
               name="email"
@@ -31,7 +31,7 @@ const Contact = () => {
             />
           </div>
           <div>
-            <label for="message">Message</label>
+            <label htmlFor="message">Message</label>
             <textarea
               id="message"
               name="message"
