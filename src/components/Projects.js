@@ -5,14 +5,12 @@ import axios from "axios"
 const Projects = () => {
   const [projects, setProjects] = useState([])
 
-  useEffect(() => {
-    const getProjects = async () => {
-      try {
-        const projects = await axios.get(`${process.env.API_URL}/api/projects`)
-        setProjects(JSON.parse(projects.data))
-      } catch (err) {
-        setProjects([])
-      }
+  useEffect(async () => {
+    try {
+      const projects = await axios.get(`${process.env.API_URL}/api/projects`)
+      setProjects(JSON.parse(projects.data))
+    } catch (err) {
+      setProjects([])
     }
   }, [])
 
