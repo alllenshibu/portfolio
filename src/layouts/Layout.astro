@@ -1,0 +1,25 @@
+---
+interface Props {
+  title: string
+}
+
+const { title } = Astro.props
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Allen Shibu is a third year Computer Science and Engineering Student at Govt. Model Engineering College. He is a skilled Full-Stack Developer with excellent knowledge of React, Express, MongoDB, Postgres, TailwinCSS and much more."
+    />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body class="bg-neutral-900 text-neutral-300">
+    <slot />
+  </body>
+</html>
