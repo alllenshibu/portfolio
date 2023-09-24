@@ -3,8 +3,6 @@ import Layout from "../layouts/Layout.astro"
 import ExperienceCard from "../components/ExperienceCard.astro"
 import ProjectCard from "../components/ProjectCard.astro"
 import Footer from "../components/Footer.astro"
-
-import petatype from "../assets/images/projects/petatype.png"
 ---
 
 <Layout title="Allen Shibu | Computer Science Student | Full-Stack Developer">
@@ -87,7 +85,7 @@ import petatype from "../assets/images/projects/petatype.png"
       </div>
       <div class="w-full flex flex-col justify-center items-center gap-4">
         <ExperienceCard
-          timeline="2023 Jun - Present"
+          timeline="2023 Jun - 2023 Aug"
           position="Backend Developer Intern • 1Living"
           about="Working on the backend service for the app including image storage using S3 buckets."
           link="https://1living.in/"
@@ -171,9 +169,6 @@ import petatype from "../assets/images/projects/petatype.png"
           src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white"
         />
         <img
-          src="https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white"
-        />
-        <img
           src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white"
         />
         <img
@@ -204,12 +199,6 @@ import petatype from "../assets/images/projects/petatype.png"
           src="https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white"
         />
         <img
-          src="https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7"
-        />
-        <img
-          src="https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white"
-        />
-        <img
           src="https://img.shields.io/badge/Render-%46E3B7.svg?style=for-the-badge&logo=render&logoColor=white"
         />
         <img
@@ -236,18 +225,30 @@ import petatype from "../assets/images/projects/petatype.png"
     </div>
     <div class="w-full flex flex-col justify-center items-center gap-4">
       <ProjectCard
-        image={petatype}
+        image="/assets/images/projects/petatype.png"
         title="PetaType"
         about="Hackathon project bulit during Tally Codebrewers. A web app where you can practice typing fast and get realtime feedback. You can also compete with your friends and see who types the fastest."
-        link="https://github.com/alapanoski/petatype"
-        tags={["Express.js", "Next.js", "socket.io"]}
+        link="https://projects.allenshibu.com/petatype"
+        tags={[
+          "Express.js",
+          "Next.js",
+          "socket.io",
+          "PostgreSQL",
+          "Tailwind CSS",
+        ]}
       />
       <ProjectCard
-        image="/assets/images/projects/petatype.png"
+        image="/assets/images/projects/xpense.png"
         title="Xpense"
         about="A finance tracker app with a dashboard to view your expenses and income."
-        link="https://github.com/alapanoski/petatype"
-        tags={["Express.js", "Next.js", "socket.io"]}
+        link="https://projects.allenshibu.com/xpense"
+        tags={[
+          "Express.js",
+          "Next.js",
+          "PostgreSQL",
+          "TurboRepo",
+          "Tailwind CSS",
+        ]}
       />
     </div>
   </div>
@@ -267,28 +268,36 @@ import petatype from "../assets/images/projects/petatype.png"
         position="Tech Sub Lead • IEDC MEC"
         about="I manage a team of 25+ student devs who build and manage various websites, apps and services."
         link="https://iedcmec.in/"
-        tags={["Express.js", "ReactJS", "Next.js", "PostgreSQL", "Supabase"]}
+        tags={[
+          "Leadership",
+          "Team Management",
+          "PostgreSQL",
+          "Docker",
+          "Next.js",
+          "Express.js",
+          "React",
+        ]}
       />
       <ExperienceCard
-        timeline="2023 May - Present"
+        timeline=""
         position="Full Stack Developer • MACS MEC"
         about="I work on various projects and services for the CS department and the college."
         link="https://cs.mec.ac.in/"
-        tags={["Express.js", "ReactJS", "Next.js", "PostgreSQL", "Supabase"]}
+        tags={["Docker", "Express.js", "S3"]}
       />
       <ExperienceCard
-        timeline="2022 Aug - Present"
+        timeline=""
         position="Full Stack Developer • FOSS MEC"
         about="I work on various projects and services for the FOSS club of the college."
         link="https://fossmec.netlify.app/"
-        tags={["Express.js", "ReactJS", "Next.js", "PostgreSQL", "Supabase"]}
+        tags={["React", "Supabase"]}
       />
       <ExperienceCard
-        timeline="2023 Feb - Present"
+        timeline=""
         position="Full Stack Developer • GDC MEC"
         about="I work on various projects services for the Game Developement Club of the college."
         link="https://gdcmec.onrender.com/"
-        tags={["Express.js", "ReactJS", "Next.js", "PostgreSQL", "Supabase"]}
+        tags={["Express.js", "React", "Next.js", "PostgreSQL", "Supabase"]}
       />
     </div>
   </div>
