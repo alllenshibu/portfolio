@@ -3,6 +3,7 @@ import Layout from "../layouts/Layout.astro"
 import ExperienceCard from "../components/ExperienceCard.astro"
 import ProjectCard from "../components/ProjectCard.astro"
 import Footer from "../components/Footer.astro"
+import Skills from "../components/Skills.astro"
 ---
 
 <Layout title="Allen Shibu | Computer Science Student | Full-Stack Developer">
@@ -95,212 +96,100 @@ import Footer from "../components/Footer.astro"
     </div>
 
     <!-- Skills -->
+    <Skills />
+
+    <!-- Projects -->
     <div
-      class="mt-32 w-full lg:w-4/5 mx-auto flex flex-col justify-center items-center gap-10"
+      class="mt-32 w-full lg:w-3/5 mx-auto flex flex-col justify-center items-center gap-10"
     >
       <div
         class="px-6 self-start lg:self-auto flex justify-center items-center"
       >
         <h2 class="uppercase font-bold text-neutral-400 tracking-widest">
-          Skills
+          Projects
         </h2>
       </div>
+      <div class="w-full flex flex-col justify-center items-center gap-4">
+        <ProjectCard
+          image="/assets/images/projects/petatype.png"
+          title="PetaType"
+          about="Hackathon project bulit during Tally Codebrewers. A web app where you can practice typing fast and get realtime feedback. You can also compete with your friends and see who types the fastest."
+          link="https://projects.allenshibu.com/petatype"
+          tags={[
+            "Express.js",
+            "Next.js",
+            "socket.io",
+            "PostgreSQL",
+            "Tailwind CSS",
+          ]}
+        />
+        <ProjectCard
+          image="/assets/images/projects/xpense.png"
+          title="Xpense"
+          about="A finance tracker app with a dashboard to view your expenses and income."
+          link="https://projects.allenshibu.com/xpense"
+          tags={[
+            "Express.js",
+            "Next.js",
+            "PostgreSQL",
+            "TurboRepo",
+            "Tailwind CSS",
+          ]}
+        />
+      </div>
+    </div>
+
+    <!-- Clubs and Societies -->
+    <div
+      class="mt-32 w-full lg:w-3/5 mx-auto flex flex-col justify-center items-center gap-10"
+    >
       <div
-        class="w-full px-10 md:px-20 py-8 bg-neutral-900 rounded-md flex flex-row justify-center flex-wrap gap-2"
+        class="px-6 self-start lg:self-auto flex justify-center items-center"
       >
-        <img
-          src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
+        <h2 class="uppercase font-bold text-neutral-400 tracking-widest">
+          Clubs and Societies
+        </h2>
+      </div>
+      <div class="w-full flex flex-col justify-center items-center gap-4">
+        <ExperienceCard
+          timeline="2023 May - Present"
+          position="Tech Sub Lead • IEDC MEC"
+          about="I manage a team of 25+ student devs who build and manage various websites, apps and services."
+          link="https://iedcmec.in/"
+          tags={[
+            "Leadership",
+            "Team Management",
+            "PostgreSQL",
+            "Docker",
+            "Next.js",
+            "Express.js",
+            "React",
+          ]}
         />
-        <img
-          src="https://img.shields.io/badge/Express.js-404D59?style=for-the-badge"
+        <ExperienceCard
+          timeline=""
+          position="Full Stack Developer • MACS MEC"
+          about="I work on various projects and services for the CS department and the college."
+          link="https://cs.mec.ac.in/"
+          tags={["Docker", "Express.js", "S3"]}
         />
-        <img
-          src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E"
+        <ExperienceCard
+          timeline=""
+          position="Full Stack Developer • FOSS MEC"
+          about="I work on various projects and services for the FOSS club of the college."
+          link="https://fossmec.netlify.app/"
+          tags={["React", "Supabase"]}
         />
-        <img
-          src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white"
-        />
-        <img
-          src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white"
-        />
-        <img
-          src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white"
-        />
-        <img
-          src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white"
-        />
-        <img
-          src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white"
-        />
-        <img
-          src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white"
-        />
-        <img
-          src="https://img.shields.io/badge/redis-%23DD0031.svg?style=for-the-badge&logo=redis&logoColor=white"
-        />
-        <img
-          src="https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white"
-        />
-        <img
-          src="https://img.shields.io/badge/nginx-%23009639.svg?style=for-the-badge&logo=nginx&logoColor=white"
-        />
-        <img
-          src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black"
-        />
-        <img
-          src="https://img.shields.io/badge/Digital_Ocean-0080FF?style=for-the-badge&logo=DigitalOcean&logoColor=white"
-        />
-        <img
-          src="https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white"
-        />
-        <img
-          src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white"
-        />
-        <img
-          src="https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=Cloudflare&logoColor=white"
-        />
-        <img
-          src="https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white"
-        />
-        <img
-          src="https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white"
-        />
-        <img
-          src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white"
-        />
-        <img
-          src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white"
-        />
-        <img
-          src="https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white"
-        />
-        <img
-          src="https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white"
-        />
-        <img
-          src="https://img.shields.io/badge/Gatsby-%23663399.svg?style=for-the-badge&logo=gatsby&logoColor=white"
-        />
-        <img
-          src="https://img.shields.io/badge/Hugo-black.svg?style=for-the-badge&logo=Hugo"
-        />
-        <img
-          src="https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white"
-        />
-        <img
-          src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white"
-        />
-        <img
-          src="https://img.shields.io/badge/Socket.io-black?style=for-the-badge&logo=socket.io&badgeColor=010101"
-        />
-        <img
-          src="https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase"
-        />
-        <img
-          src="https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white"
-        />
-        <img
-          src="https://img.shields.io/badge/Render-%46E3B7.svg?style=for-the-badge&logo=render&logoColor=white"
-        />
-        <img
-          src="https://img.shields.io/badge/latex-%23008080.svg?style=for-the-badge&logo=latex&logoColor=white"
-        />
-        <img
-          src="https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white"
-        />
-        <img
-          src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white"
+        <ExperienceCard
+          timeline=""
+          position="Full Stack Developer • GDC MEC"
+          about="I work on various projects services for the Game Developement Club of the college."
+          link="https://gdcmec.onrender.com/"
+          tags={["Express.js", "React", "Next.js", "PostgreSQL", "Supabase"]}
         />
       </div>
     </div>
   </main>
-
-  <!-- Projects -->
-  <div
-    class="mt-32 w-full lg:w-3/5 mx-auto flex flex-col justify-center items-center gap-10"
-  >
-    <div class="px-6 self-start lg:self-auto flex justify-center items-center">
-      <h2 class="uppercase font-bold text-neutral-400 tracking-widest">
-        Projects
-      </h2>
-    </div>
-    <div class="w-full flex flex-col justify-center items-center gap-4">
-      <ProjectCard
-        image="/assets/images/projects/petatype.png"
-        title="PetaType"
-        about="Hackathon project bulit during Tally Codebrewers. A web app where you can practice typing fast and get realtime feedback. You can also compete with your friends and see who types the fastest."
-        link="https://projects.allenshibu.com/petatype"
-        tags={[
-          "Express.js",
-          "Next.js",
-          "socket.io",
-          "PostgreSQL",
-          "Tailwind CSS",
-        ]}
-      />
-      <ProjectCard
-        image="/assets/images/projects/xpense.png"
-        title="Xpense"
-        about="A finance tracker app with a dashboard to view your expenses and income."
-        link="https://projects.allenshibu.com/xpense"
-        tags={[
-          "Express.js",
-          "Next.js",
-          "PostgreSQL",
-          "TurboRepo",
-          "Tailwind CSS",
-        ]}
-      />
-    </div>
-  </div>
-
-  <!-- Clubs and Societies -->
-  <div
-    class="mt-32 w-full lg:w-3/5 mx-auto flex flex-col justify-center items-center gap-10"
-  >
-    <div class="px-6 self-start lg:self-auto flex justify-center items-center">
-      <h2 class="uppercase font-bold text-neutral-400 tracking-widest">
-        Clubs and Societies
-      </h2>
-    </div>
-    <div class="w-full flex flex-col justify-center items-center gap-4">
-      <ExperienceCard
-        timeline="2023 May - Present"
-        position="Tech Sub Lead • IEDC MEC"
-        about="I manage a team of 25+ student devs who build and manage various websites, apps and services."
-        link="https://iedcmec.in/"
-        tags={[
-          "Leadership",
-          "Team Management",
-          "PostgreSQL",
-          "Docker",
-          "Next.js",
-          "Express.js",
-          "React",
-        ]}
-      />
-      <ExperienceCard
-        timeline=""
-        position="Full Stack Developer • MACS MEC"
-        about="I work on various projects and services for the CS department and the college."
-        link="https://cs.mec.ac.in/"
-        tags={["Docker", "Express.js", "S3"]}
-      />
-      <ExperienceCard
-        timeline=""
-        position="Full Stack Developer • FOSS MEC"
-        about="I work on various projects and services for the FOSS club of the college."
-        link="https://fossmec.netlify.app/"
-        tags={["React", "Supabase"]}
-      />
-      <ExperienceCard
-        timeline=""
-        position="Full Stack Developer • GDC MEC"
-        about="I work on various projects services for the Game Developement Club of the college."
-        link="https://gdcmec.onrender.com/"
-        tags={["Express.js", "React", "Next.js", "PostgreSQL", "Supabase"]}
-      />
-    </div>
-  </div>
   <Footer />
 </Layout>
 
