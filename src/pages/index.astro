@@ -110,7 +110,7 @@ import Skills from "../components/Skills.astro";
         </h2>
       </div>
       <div class="w-full flex flex-col justify-center items-center gap-4">
-        <ProjectCard
+        <!-- <ProjectCard
           image="/assets/images/projects/petatype.png"
           title="PetaType"
           about="Hackathon project bulit during Tally Codebrewers. A web app where you can practice typing fast and get realtime feedback. You can also compete with your friends and see who types the fastest."
@@ -122,12 +122,25 @@ import Skills from "../components/Skills.astro";
             "PostgreSQL",
             "Tailwind CSS",
           ]}
-        />
+        /> -->
         <ProjectCard
           image="/assets/images/projects/xpense.png"
           title="Xpense"
           about="A finance tracker app with a dashboard to view your expenses and income."
           link="https://projects.allenshibu.com/xpense"
+          tags={[
+            "Express.js",
+            "Next.js",
+            "PostgreSQL",
+            "TurboRepo",
+            "Tailwind CSS",
+          ]}
+        />
+        <ProjectCard
+          image="/assets/images/projects/eventsync.png"
+          title="Event Sync"
+          about="An event management suite built with NextJS, Express, Postgres and Docker to handle event registrations, send emails to participants, check-in participants during an event and see analytics"
+          link="https://projects.allenshibu.com/eventsync"
           tags={[
             "Express.js",
             "Next.js",
